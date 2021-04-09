@@ -1,0 +1,180 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 5rem;
+}
+
+q {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer>p {
+  font-family: 'Lora', serif;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+
+.card.user-login {
+  background-color: #0000000a;
+}
+
+.card.user-login>.card-header {
+  color: #854d27;
+}
+
+.card.food-list {
+  background-color: #3c2b2b0f;
+}
+
+.card.food-list>.card-header {
+  padding: 0;
+}
+
+.card.food-list>.card-header>img {
+  filter: brightness(70%);
+}
+
+.card.food-list>.card-body>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card.food-list>.card-body>ul.author-detail {
+  position: relative;
+}
+
+.card.food-list>.card-body>ul.author-detail>li {
+  margin: 0.2rem 0;
+}
+
+.card.food-list>.card-body>ul.author-detail>li>p.quote::before {
+  content: '"'
+}
+
+.card.food-list>.card-body>ul.author-detail>li>p.quote::after {
+  content: '"'
+}
+
+.card.food-list>.card-body>ul.author-detail>li>p.quote {
+  background-color: #e7e393;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0.7rem;
+}
+
+.card.food-list>.card-body>ul.author-detail>li:nth-child(1),
+.card.food-list>.card-body>ul.author-detail>li:nth-child(2) {
+  color: #04030f;
+}
+
+.card.food-list>.card-body>ul.author-detail>li:nth-child(1) {
+  font-weight: bold;
+}
+
+.card.food-list>.card-body>ul.author-detail>li:nth-child(3) {
+  font-size: 0.8rem;
+  position: absolute;
+  top: -1.4rem;
+  right: -0.6rem
+}
+
+.card.food-list>.card-body>ul.author-detail>li:nth-child(4) {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.like-indicator {
+  color: #d20000;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+.card.food-list>.card-body>ul>li>p.description {
+  font-size: .8rem;
+}
+
+
+.card.food-list>.card-body>ul>li>div.ratings {
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+}
+
+.card-body>ul>li>div.ratings>.rating {
+  margin: 0 .2rem;
+  color: #e7e393;
+}
+
+.card.food-list>.card-body>ul>li>div>img.user-profile {
+  width: 5vh;
+  border-radius: 50%;
+}
+
+.card.food-list>.card-body>ul>li>div>p.comment {
+  margin-top: 0;
+  font-size: 0.8rem;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+
+footer {
+  background-color: #ddd;
+  padding: 1.2rem;
+}
+
+footer>p {
+  margin-bottom: 0;
+}
+
+.card .show-more {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1.3rem;
+  font-style: italic;
+  color: #575757e3;
+  cursor: pointer;
+}
+
+.show-more .line {
+  margin: 0 0.4rem;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  right: 0;
+  left: unset;
+}
+
+.chef {
+  color: #dd7230;
+}

@@ -1,0 +1,73 @@
+.modal-detail-food {
+    padding: 0 !important;
+}
+
+.modal-content {
+    border: 0;
+    border-radius: 0;
+}
+
+.modal-author {
+    font-weight: bold;
+    margin: 0;
+}
+
+.modal-date {
+    font-weight: bold;
+}
+
+.modal-ratings {
+    color: #e7e393;
+}
+
+.modal-resep {
+    margin: 0;
+    font-weight: bold;
+}
+
+.modal-user-profile {
+
+    width: 5vh;
+    border-radius: 50%;
+}
+
+.modal-comment {
+    margin-top: 0;
+    font-size: 0.8rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.like-container {
+    text-align: right;
+}
+
+.like-indicator {
+    color: #d20000;
+    margin-right: 0.3rem;
+    cursor: pointer;
+}
+
+
+ul.list-resep {
+    margin-left: 0.8rem;
+}
+
+ul.list-resep>li {
+    font-style: italic;
+    color: #854d27;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+}
+
+.close.close-modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0.7rem;
+    top: -0.5rem;
+}
