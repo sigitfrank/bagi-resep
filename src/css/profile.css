@@ -1,3 +1,4 @@
+/* SHORT PROFILE */
 .avatar-profile {
     text-align: center;
 }
@@ -7,13 +8,13 @@
     border-radius: 50%;
 }
 
-.avatar-profile>.top>.profile-detail p:nth-child(1) {
+.short-profile p:nth-child(1) {
     font-weight: bold;
     letter-spacing: .15rem;
     margin-bottom: .5em;
 }
 
-.avatar-profile>.top>.profile-detail p:nth-child(2) {
+.short-profile p:nth-child(2) {
     color: #717171;
     letter-spacing: .15rem;
     font-weight: bold;
@@ -21,7 +22,7 @@
     margin-bottom: .5em;
 }
 
-.avatar-profile>.top>.profile-detail p:nth-child(3) {
+.short-profile p:nth-child(3) {
     color: #717171;
     letter-spacing: .15rem;
     font-weight: bold;
@@ -49,24 +50,40 @@
     color: #fff;
 }
 
+/* PROFILE LINKS  */
+
 .card.profile-links>.card-body>ul>li>.link-icons {
     font-size: 1.5rem;
     margin-right: 0.3rem;
 }
 
-.card.profile-links>.card-body>ul>li:nth-child(1)>.link-icons {
-    color: #000
+.card.profile-links>.card-body>ul>li:nth-child(1) .link-icons {
+    color: #000;
 }
 
-.card.profile-links>.card-body>ul>li:nth-child(2)>.link-icons {
+.card.profile-links>.card-body>ul>li:nth-child(2) .link-icons {
     color: #0069d9
 }
 
-.card.profile-links>.card-body>ul>li:nth-child(3)>.link-icons {
-    color: pink;
+.card.profile-links>.card-body>ul>li:nth-child(3) .link-icons {
+    color: #833ab4;
 }
 
 
-.card.profile-links>.card-body>ul>li:nth-child(4)>.link-icons {
+.card.profile-links>.card-body>ul>li:nth-child(4) .link-icons {
     color: #0069d9
+}
+
+.social-media {
+    color: #717171;
+}
+
+/*PROFILE DETAILS  */
+
+
+/* DEFAULT */
+.card>.card-body>ul>li {
+    border-bottom: 0.1rem solid #717171;
+    margin-bottom: 1.2rem;
+    padding-bottom: .5rem;
 }
