@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
-import ModalDetailFood from './components/ModalDetailFood';
+import ModalDetailFood from './components/ModalComponent/ModalDetailFood';
 
 export const LoginContext = React.createContext()
 function App() {

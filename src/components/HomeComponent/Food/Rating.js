@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
 function Rating() {
-    return (<ul>
+    return (<ul style={{marginBottom:'0'}}>
         <li>
             <div className="ratings">
                 <BsStarFill className="rating" />

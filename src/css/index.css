@@ -38,6 +38,11 @@ footer>p {
 }
 
 
+.img-profile {
+  border-radius: 50%;
+  width: 5vh;
+}
+
 .card.user-login {
   background-color: #0000000a;
 }
@@ -105,7 +110,9 @@ footer>p {
 }
 
 .card.food-list>.card-body>ul.author-detail>li:nth-child(4) {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   font-size: 0.9rem;
 }
 

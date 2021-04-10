@@ -1,21 +1,17 @@
-import React, { useState } from 'react'
+import React, { useReducer } from 'react'
+import { SET_EMAIL, SET_PASSWORD } from '../ActionTypes/RegisterAction'
+import { RegisterReducer } from '../Reducer/RegisterReducer'
+
+const initialState = { email: '', password: '', }
 
 function RegisterScreen() {
+    const [state, dispatch] = useReducer(RegisterReducer, initialState)
 
-    const [data, setData] = useState({
-        email: '',
-        password: '',
-    })
-
-    const handleFormChange = (event) => {
-        setData({ ...data, [event.target.name]: event.target.value })
-    }
-
+    const { email, password } = state
     const handleSubmit = (event) => {
         event.preventDefault()
         alert(`${email}, ${password}`)
     }
-    const { email, password } = data
     return (<>
         <div className="row justify-content-center">
             <div className="col-md-6">
@@ -27,11 +23,11 @@ function RegisterScreen() {
                         <form method="post" onSubmit={handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
-                                <input type="email" name="email" className="form-control" value={email} id="email" onChange={(event) => handleFormChange(event)} />
+                                <input type="email" name="email" className="form-control" value={email} id="email" onChange={(event) => dispatch({ type: SET_EMAIL, value: event.target.value })} />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="password">Password</label>
-                                <input type="password" name="password" className="form-control" value={password} id="password" onChange={(event) => handleFormChange(event)} />
+                                <input type="password" name="password" className="form-control" value={password} id="password" onChange={(event) => dispatch({ type: SET_PASSWORD, value: event.target.value })} />
                             </div>
                             <button className="btn btn-primary btn-lg">Register</button>
                         </form>
