@@ -84,9 +84,13 @@
 
 /* PROFILE LINKS  */
 
-.card.profile-links>.card-body>ul>li>.link-icons {
+.card.profile-links>.card-body>ul>li .link-icons {
     font-size: 1.5rem;
     margin-right: 0.3rem;
+}
+
+.card.profile-links>.card-body>ul>li .link-icons:hover {
+    color: #0069d9;
 }
 
 .card.profile-links>.card-body>ul>li:nth-child(1) .link-icons {
@@ -108,6 +112,10 @@
 
 .social-media {
     color: #717171;
+}
+
+.social-media:hover {
+    text-decoration: none;
 }
 
 /*PROFILE DETAILS  */

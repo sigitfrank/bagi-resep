@@ -11,7 +11,7 @@ function UserSocialLinks() {
                                 <FiGlobe className="link-icons" />
                             </div>
                             <div className="col-10">
-                                <span className="social-media">sigifrank.github.io</span>
+                                <a href="./profile" className="social-media">sigifrank.github.io</a>
                             </div>
                         </div>
                     </li>
@@ -21,7 +21,7 @@ function UserSocialLinks() {
                                 <FiTwitter className="link-icons" />
                             </div>
                             <div className="col-10">
-                                <span className="social-media">sigitfrank</span>
+                                <a href="./profile" className="social-media">sigitfrank</a>
                             </div>
                         </div>
                     </li>
@@ -31,7 +31,7 @@ function UserSocialLinks() {
                                 <FiInstagram className="link-icons" />
                             </div>
                             <div className="col-10">
-                                <span className="social-media">sigitfrank</span>
+                                <a href="./profile" className="social-media">sigitfrank</a>
                             </div>
                         </div>
                     </li>
@@ -41,13 +41,13 @@ function UserSocialLinks() {
                                 <FiFacebook className="link-icons" />
                             </div>
                             <div className="col-10">
-                                <span className="social-media">sigitfrank</span>
+                                <a href="./profile" className="social-media">sigitfrank</a>
                             </div>
                         </div>
                     </li>
                 </ul>
             </div>
-        </div>
+        </div >
     )
 }
 
