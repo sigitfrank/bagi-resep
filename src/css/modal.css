@@ -4,7 +4,21 @@
 
 .modal-content {
     border: 0;
-    border-radius: 0;
+    border-radius: 0.5rem;
+}
+
+#user-food-carousel .carousel-inner {
+    border-radius: 0.5rem;
+}
+
+.img-collection-food {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(160px, 1fr);
+    overflow-x: auto;
 }
 
 .modal-author {

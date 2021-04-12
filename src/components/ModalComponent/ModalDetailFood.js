@@ -15,6 +15,12 @@ function ModalDetailFood() {
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <CarouselFoodModal />
+                    <div className="img-collection-food">
+                        <img className="d-block w-100" src="https://www.denpasarkota.go.id/uploads/datang/datang_192709040901_5WarungNasiGorengLezatdenganHargayangBersahabat.jpg" alt="user-food" />
+                        <img className="d-block w-100" src="https://www.denpasarkota.go.id/uploads/datang/datang_192709040901_5WarungNasiGorengLezatdenganHargayangBersahabat.jpg" alt="user-food" />
+                        <img className="d-block w-100" src="https://www.denpasarkota.go.id/uploads/datang/datang_192709040901_5WarungNasiGorengLezatdenganHargayangBersahabat.jpg" alt="user-food" />
+                        <img className="d-block w-100" src="https://www.denpasarkota.go.id/uploads/datang/datang_192709040901_5WarungNasiGorengLezatdenganHargayangBersahabat.jpg" alt="user-food" />
+                    </div>
                     <div className="p-3">
                         <AuthorModal />
                         <ResepModal />
