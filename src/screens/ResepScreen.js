@@ -1,5 +1,5 @@
 import React from 'react'
-import FoodList from '../components/HomeComponent/Food/Food'
+import FoodList from '../components/HomeComponent/Food'
 import Search from '../components/Search'
 
 function ResepScreen() {

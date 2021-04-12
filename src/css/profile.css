@@ -8,10 +8,42 @@
     border-radius: 50%;
 }
 
+.badge {
+    position: relative;
+}
+
+
+.user-follow-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0.2rem;
+}
+
+
+.user-follow-container .user-follow p {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.user-follow-container .user-follow .follower,
+.user-follow-container .user-follow .following {
+    color: #717171;
+}
+
 .short-profile p:nth-child(1) {
     font-weight: bold;
     letter-spacing: .15rem;
     margin-bottom: .5em;
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.user-badge {
+    width: 1.5rem;
+    position: relative;
+    top: -0.5rem;
 }
 
 .short-profile p:nth-child(2) {
@@ -82,8 +114,24 @@
 
 
 /* DEFAULT */
-.card>.card-body>ul>li {
-    border-bottom: 0.1rem solid #717171;
+.card.profile-links>.card-body>ul>li,
+.card.profile-details>.card-body>ul>li {
+    border-bottom: 0.1rem solid #c7c6c6;
     margin-bottom: 1.2rem;
     padding-bottom: .5rem;
+}
+
+/* CUSTOM RESPONSIVE */
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .short-profile p:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .user-badge {
+        width: 1.2rem;
+        position: absolute;
+        top: -1rem;
+        left: 0.1rem;
+    }
 }

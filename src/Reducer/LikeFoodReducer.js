@@ -1,4 +1,4 @@
-import { initialState } from '../components/HomeComponent/Food/Author'
+import { initialState } from '../components/HomeComponent/Author'
 import { LIKE, DISLIKE } from '../ActionTypes/LikeFoodAction'
 export const LikeFoodReducer = (state = initialState, action) => {
     if (action.type === LIKE) {

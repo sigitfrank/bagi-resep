@@ -37,6 +37,10 @@ footer>p {
   text-transform: uppercase;
 }
 
+.dropdown-menu>p:hover {
+  background-color: unset;
+}
+
 
 .img-profile {
   border-radius: 50%;
@@ -116,10 +120,18 @@ footer>p {
   font-size: 0.9rem;
 }
 
-.like-indicator {
-  color: #d20000;
+.like-indicator,
+.comment-indicator {
   margin-right: 0.3rem;
   cursor: pointer;
+}
+
+.like-indicator {
+  color: #d20000;
+}
+
+.comment-indicator {
+  color: #dd7230;
 }
 
 .card.food-list>.card-body>ul>li>p.description {
@@ -127,13 +139,13 @@ footer>p {
 }
 
 
-.card.food-list>.card-body>ul>li>div.ratings {
+.ratings {
   display: flex;
   justify-content: center;
   font-size: 1.7rem;
 }
 
-.card-body>ul>li>div.ratings>.rating {
+.ratings>.rating {
   margin: 0 .2rem;
   color: #e7e393;
 }

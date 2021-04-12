@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react'
 import { BsFillHeartFill, BsHeart } from 'react-icons/bs'
-import Rating from '../HomeComponent/Food/Rating'
+import { FaRegCommentDots } from "react-icons/fa"
+import Rating from '../HomeComponent/Rating'
 import { LikeFoodReducer } from '../../Reducer/LikeFoodReducer'
 import { LIKE, DISLIKE } from '../../ActionTypes/LikeFoodAction'
 const initialState = {
@@ -20,16 +21,18 @@ function AuthorModal() {
     return (<>
         <section>
             <div className="row">
-                <div className="col-6">
+                <div className="col-7">
                     <p className="modal-author mb-2">Sigit Tunggul Waskito</p>
                     <p className="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
                 </div>
-                <div className="col-6 text-right">
+                <div className="col-5 text-right">
                     <span className="modal-date badge badge-pill badge-secondary">2021-4-09</span>
                     <div className="modal-ratings mt-2">
                         <Rating />
                     </div>
+                    <hr />
                     <div className="like-container">
+                    <FaRegCommentDots className="comment-indicator" /> <span className="mr-2"> : 219</span>
                         {
                             toggleLikedFood()
                         }
