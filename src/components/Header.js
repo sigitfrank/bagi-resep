@@ -20,6 +20,7 @@ function Navbar() {
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
             <p className="dropdown-item">Hello, Sigit!</p>
             <Link className="dropdown-item" to="/resep/1">Resep</Link>
+            <Link className="dropdown-item" to="/videos">Videos</Link>
             <Link className="dropdown-item" to="/profile">Profile</Link>
             <div className="dropdown-divider"></div>
             <button className="dropdown-item" onClick={logout}>Keluar</button>

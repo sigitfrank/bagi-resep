@@ -41,6 +41,22 @@ footer>p {
   background-color: unset;
 }
 
+.category {
+  display: grid;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 1.4rem;
+  grid-auto-flow: column;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.category .badge.badge-dark {
+  padding: 0.8rem;
+}
+
 
 .img-profile {
   border-radius: 50%;
@@ -196,4 +212,47 @@ footer>p {
 
 .chef {
   color: #dd7230;
+}
+
+@media only screen and (max-width: 576px) {
+  .category {
+    justify-content: flex-end;
+    gap: 0.4rem;
+  }
+
+  .category .badge.badge-dark {
+    padding: 0.5rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .category {
+    justify-content: flex-start;
+    gap: 0.4rem;
+  }
+
+  .category .badge.badge-dark {
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .category {
+    gap: 0.5rem;
+  }
+
+  .category .badge.badge-dark {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .category {
+    margin-top: 1.4rem;
+  }
+
+  .category .badge.badge-dark {
+    padding: 0.5rem;
+  }
 }
