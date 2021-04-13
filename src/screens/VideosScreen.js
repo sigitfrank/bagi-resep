@@ -42,13 +42,23 @@ function VideosScreen() {
                                                 <span className="video-watch-count"> 2139 x ditonton </span>
                                                 <span className="video-date badge badge-dark"> 2021-04-23</span>
                                             </div>
-
                                             <Rating />
                                             <div className="description-right">
                                                 <FaRegCommentDots className="comment-indicator" /> <span className="mr-2"> : 219</span>
                                                 {
                                                     toggleLikedVideo()
                                                 }
+                                            </div>
+                                        </li>
+
+                                        <li style={{ borderTop: "1px solid rgba(87, 87, 87, 0.18)", marginTop: "2.5rem" }}>
+                                            <div className="d-flex align-items-center my-3">
+                                                <img src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg" alt="user-profile" className="modal-user-profile" />
+                                                <p className="modal-comment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque asperiores nesciunt officiis, ...</p>
+                                            </div>
+                                            <div className="d-flex align-items-center my-3">
+                                                <img src="https://preview.keenthemes.com/metronic-v4/theme/assets/pages/media/profile/profile_user.jpg" alt="user-profile" className="modal-user-profile" />
+                                                <p className="modal-comment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, quos.</p>
                                             </div>
                                         </li>
                                     </ul>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Category() {
     return (
-        <div className="col-md-12 col-8 col-lg-6">
+        <div className="col-md-12 col-12 col-lg-6">
             <div className="category">
                 <span className="badge badge-dark">Sehat</span>
                 <span className="badge badge-dark">Pedas</span>

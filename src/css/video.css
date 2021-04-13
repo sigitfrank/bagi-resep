@@ -37,11 +37,6 @@
     color: #575757e3;
 }
 
-.card.video-large .video-description>ul>li:nth-child(2) .desctiption-left span {
-    margin-right: 0.5rem;
-    font-size: 0.9rem;
-}
-
 .card.video-large .video-description>ul>li:nth-child(2) .description-right {
     font-size: 0.9rem;
     display: flex;
@@ -65,7 +60,7 @@
     font-size: 1rem;
     position: absolute;
     right: 1rem;
-    bottom: 4.3rem;
+    top: 24rem;
 }
 
 .card.video-medium .video-description>ul>li:nth-child(2) .desctiption-left {
@@ -77,7 +72,7 @@
     font-size: 0.9rem;
     position: absolute;
     right: 1rem;
-    bottom: 2.3rem;
+    top: 25.5rem;
     display: flex;
     align-items: center;
 }
@@ -88,7 +83,15 @@
 }
 
 .video-date {
-    font-size: 0.7rem;
+    top: 1.5rem;
+}
+
+.card.video-large .video-date {
+    left: -7.1rem;
+}
+
+.card.video-medium .video-date {
+    left: -6.3rem;
 }
 
 /* RESPONSIVE */
@@ -106,57 +109,66 @@
     }
 
     .card.video-large .video-description>ul>li:nth-child(2) ul li .ratings {
-        bottom: 4.3rem;
+        bottom: 13.3rem;
         right: 1rem;
         position: absolute;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .card.video-large .video-description>ul>li:nth-child(2) .description-right {
         font-size: 0.9rem;
         position: absolute;
-        right: 1.6rem;
-        bottom: 2.5rem;
+        right: 1rem;
+        bottom: 11.3rem;
     }
 }
 
 @media (max-width: 768px) and (min-width: 576px) {
     .card.video-medium .video-description>ul>li:nth-child(2) ul li .ratings {
-        bottom: 4.5rem;
-        right: 1rem;
+        top: 24rem;
+        right: 0.5rem;
+    }
+
+    .video-date {
+        left: -7.1rem;
     }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
     .card.video-medium .video-description>ul>li:nth-child(2) ul li .ratings {
-        font-size: 1rem;
+        font-size: 0.75rem;
         position: absolute;
-        bottom: 2.5rem;
+        top: 24rem;
         right: 0.5rem;
     }
 
     .card.video-medium .video-description>ul>li:nth-child(2) .description-right {
         font-size: 0.9rem;
         position: absolute;
-        left: 1.2rem;
-        bottom: 0.5rem;
+        right: 0.7rem;
+        top: 25.5rem;
         display: flex;
         align-items: center;
+    }
+
+    .card.video-medium .video-date {
+        top: 0.3rem;
+        left: 0rem;
     }
 }
 
 @media (max-width: 1200px) and (min-width: 992px) {
     .card.video-medium .video-description>ul>li:nth-child(2) ul li .ratings {
         font-size: 1rem;
-        bottom: 4.5rem;
+        top: 24rem;
         left: 12rem;
     }
 
     .card.video-medium .video-description>ul>li:nth-child(2) .description-right {
         font-size: 0.9rem;
         position: absolute;
-        left: 1.2rem;
-        bottom: 0.5rem;
+        right: 1.3rem;
+        top: 25.5rem;
         display: flex;
         align-items: center;
     }
